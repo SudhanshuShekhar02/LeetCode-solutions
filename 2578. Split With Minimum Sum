@@ -1,0 +1,20 @@
+class Solution {
+public:
+    int splitNum(int nums) {
+        string s = to_string(nums);
+        sort(s.begin(), s.end());
+        string nums1="";
+        string nums2="";
+        for(int i=0;i<s.size();i++){
+            if(i%2==0){
+                nums1.push_back(s[i]);
+            }
+            else{
+                nums2.push_back(s[i]);
+            }
+        }
+        return stoi(nums1)+stoi(nums2);
+
+        
+    }
+};
