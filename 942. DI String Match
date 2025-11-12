@@ -1,0 +1,14 @@
+class Solution {
+public:
+    vector<int> diStringMatch(string s) {
+        int n=s.length();
+        int  incd=n, inci=0;
+        vector<int>ans(n+1);
+        for(int i=0;i<=n;i++){
+            ans[i]=(i<n && s[i]=='D')?incd-- : inci++;
+        }
+        return ans;
+
+        
+    }
+};
