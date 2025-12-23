@@ -1,0 +1,8 @@
+class Solution {
+public:
+    int gcdOfOddEvenSums(int n) {
+        int sumODD=n*(n+1), sumEven=n*n;
+        return gcd(sumODD, sumEven);
+        
+    }
+};
